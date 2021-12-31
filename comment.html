@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="description"
+        content="Use a free Google Firebase Database to allow visitors to leave comments on your web pages. From https://AlanSimpson.me/firebase">
+    <meta name="author" content="Alan Simpson">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/comment.js"></script>
+</head>
+
+<body>
+    <div id="allcomments">
+        <div class="typing-demo">
+            Leave Us a Comment..
+        </div>
+        <form id="newcomment">
+            <label for="tbName">Your Name</label>
+            <br>
+            <input class="myname" id="tbName" type="text" maxlength="20" required>
+            <br>
+            <label for="txComment">Your Comment</label>
+            <br>
+            <textarea id="txComment" maxlength="600" required style="width: 60%;"></textarea>
+            <br>
+            <input class="cmntsubmit" type="submit" id="btnSubmitComment" value="SUBMIT">
+        </form>
+        <h3>Comments</h3>
+        <ul id="pastcomments"></ul>
+    </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-database.js"></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyDFMy6jtaSguUVog2V7iYGt0hplAp5ZOYw",
+            authDomain: "bangladesh-3fc2b.firebaseapp.com",
+            databaseURL: "https://bangladesh-3fc2b-default-rtdb.firebaseio.com",
+            projectId: "bangladesh-3fc2b",
+            storageBucket: "bangladesh-3fc2b.appspot.com",
+            messagingSenderId: "786616429988",
+            appId: "1:786616429988:web:6b323a16545d4eb3a82531",
+            measurementId: "G-PG7XVX0FYK"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        //Called when page first opens and also after Submit button click to show all comments for this page.
+        showpastcomments()
+    </script>
+
+</body>
+
+</html>

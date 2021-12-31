@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>timeline</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Source+Code+Pro:wght@600&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/timeline.css">
+
+
+</head>
+
+<body>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#1600">1600 BC</a>
+    <a href="#700">700 BC</a>
+    <a href="#300">300</a>
+    <a href="#600">500</a>
+    <a href="#1200">1200</a>
+    <a href="#1500">1500</a>
+    <a href="#1604">1600</a>
+    <a href="#1700">1700</a>
+    <a href="#1800">1800</a>
+    <a href="#1947">1947</a>
+    <a href="#1952">1952</a>
+    <a href="#1971">1971</a>
+  </div>
+
+
+  <div class="timeline-container" id="timeline-1">
+    <div class="wrapper">
+      <button class="openbtn" onclick="openNav()">&#9776;</button>
+      <a class="home" href="../index.html"><i class="fas fa-home"></i></a>
+      <p>Bangladesh - History & Lore<br><a href="https://codepen.io/grohit/">A Visual
+          Timeline</a></p>
+    </div>
+
+    <!--div class="timeline-header">
+      <div class="timeline-header__title" data-aos="fade-up">Bangladesh - History &
+        Lore</div>
+      <h3 class="timeline-header__subtitle" data-aos="fade-up">A Visual Timeline</h3>
+    </div-->
+
+    <div class="timeline">
+      <div class="timeline-item" data-text="A JOURNEY OF 2500 YEARS">
+        <div class="timeline__content"><img class="timeline__img"
+            src="assets/img/Timeline/vintage-map-bangladesh-grunge-paper-151736015.jpg" />
+          <h2 class="timeline__content-title"></h2>
+          <p class="timeline__content-desc"></p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="CALOLITHIC PERIOD">
+        <div id="1600" class="timeline__content"><img class="timeline__img" src="assets/img/Timeline/1600.png" />
+          <h2 class="timeline__content-title">1600 BC</h2>
+          <p class="timeline__content-desc">The Pandu Rajar Dhibi archaeological site dates to this period.</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="BARENDRA CIVILIZATION">
+        <div id="700" class="timeline__content"><img class="timeline__img" src="assets/img/Timeline/700bc.jfif" />
+          <h2 class="timeline__content-title">700 BC</h2>
+          <p class="timeline__content-desc">Urban civilization emerges at Mahasthangarh, Bogra district, capital of the
+            Pundravardhana area.</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="GANGARIDI KINGDOM">
+        <div id="300" class="timeline__content"><img class="timeline__img" src="assets/img/Timeline/300bc.jpg" />
+          <h2 class="timeline__content-title">300 BC</h2>
+          <p class="timeline__content-desc">The kingdom of Gangaridai mentioned in an account by Greek traveller
+            Megasthenes. Ancient city of Pundravardhana also dates back to this period.</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="KING SHASHANKA">
+        <div id="600" class="timeline__content"><img class="timeline__img" src="assets/img/Timeline/590.jpeg" />
+          <h2 class="timeline__content-title">590</h2>
+          <p class="timeline__content-desc">Reign of Shashanka, the first prominent king in the known history of Bengal.
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="MUSLIM CONQUEST">
+        <div id="1200" class="timeline__content"><img class="timeline__img" src="assets/img/Timeline/1204.jpg" />
+          <h2 class="timeline__content-title">1204</h2>
+          <p class="timeline__content-desc">Ikhtiyar Uddin Muhammad Bin Bakhtiyar Khalji's conquest of Bengal. Onset of
+            Muslim rule in Bengal</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="BATTLE OF EGARASINDHU">
+        <div id="1500" class="timeline__content"><img class="timeline__img" src="assets/img/Timeline/Isa Khan.jpg" />
+          <h2 class="timeline__content-title">1584</h2>
+          <p class="timeline__content-desc">Mughal Subahdar Shahbaz Khan captures Sonargaon, capital of Isa Khan who
+            then defeats the Mughal army in the battles of Egarasindhur and Bhawal to reclaim his lands</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="FOUNDATION OF DHAKA">
+        <div id="1604" class="timeline__content"><img class="timeline__img" src="assets/img/Timeline/DhakaCity.png" />
+          <h2 class="timeline__content-title">1608</h2>
+          <p class="timeline__content-desc">Subahdar Islam Khan's leads an expedition into Bengal to subjugate the local
+            rulers then moves the provincial capital to Dhaka and renames it Jahangir Nagar</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="BATTLE OF PALASSY">
+        <div id="1700" class="timeline__content"><img class="timeline__img" src="assets/img/Timeline/pallassey.jpeg" />
+          <h2 class="timeline__content-title">1757</h2>
+          <p class="timeline__content-desc">
+            Battle of Palashi. a decisive British East India Company victory over the Nawab of Bengal establishes
+            Company rule in India.</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="SEPOY MUTINY">
+        <div id="1800" class="timeline__content"><img class="timeline__img" src="assets/img/Timeline/1857.jpg" />
+          <h2 class="timeline__content-title">1857</h2>
+          <p class="timeline__content-desc">Indian Rebellion of 1857 also known as the Sepoy Mutiny/ Indian Mutiny
+            breaks out.</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="INDEPENDENCE FROM BRITISH RAJ">
+        <div id="1947" class="timeline__content"><img class="timeline__img" src="assets/img/Timeline/1947.png" />
+          <h2 class="timeline__content-title">1947</h2>
+          <p class="timeline__content-desc">British provinces of India were partitioned into two sovereign dominion
+            states: the Dominion of India and the Dominion of Pakistan.</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="LANGUAGE MOVEMENT">
+        <div id="1952" class="timeline__content"><img class="timeline__img" src="assets/img/Timeline/1952.jpg" />
+          <h2 class="timeline__content-title">1952</h2>
+          <p class="timeline__content-desc">
+            The Bengali Language Movement was a political movement in former East Bengal advocating the recognition of
+            the Bengali language as an official language of the then-Dominion of Pakistan</strong></i>
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="BIRTH OF BANGLADESH">
+        <div id="1971" class="timeline__content"><img class="timeline__img" src="assets/img/Timeline/1971.jpg" />
+          <h2 class="timeline__content-title">1971</h2>
+          <p class="timeline__content-desc">Bangladesh War of Independence, or simply the Liberation War in Bangladesh,
+            was a revolution and armed conflict sparked by the rise of the Bengali nationalist and self-determination
+            movement in what was then East Pakistan during the 1971 Bangladesh genocide.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
+  <script src="assets/js/timeline.js"></script>
+
+</body>
+
+</html>
