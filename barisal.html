@@ -55,38 +55,60 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
           <li class="dropdown"><a href="#"><span>Gallery</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="Photos.html">Photos</a></li>
-              <li><a href="Videos.html">Videos</a></li>
+              <li><a href="photos.html">Photos</a></li>
+              <li><a href="videos.html">Videos</a></li>
             </ul>
           </li>
-          <li class="dropdown active"><a href="#"><span>Explore</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="#"><span>Explore</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li class="dropdown"><a href="#"><span>Heritage</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="/Barisal.html">Barisal</a></li>
-                  <li><a href="/Chittagong.html">Chittagong</a></li>
-                  <li><a href="/Dhaka.html">Dhaka</a></li>
-                  <li><a href="/Khulna.html">Khulna</a></li>
-                  <li><a href="/Mymensingh.html">Mymensingh</a></li>
-                  <li><a href="/Rangpur.html">Rangpur</a></li>
-                  <li><a href="/Rajshahi.html">Rajshahi</a></li>
-                  <li><a href="/Sylhet.html">Sylhet</a></li>
+                  <li><a href="barisal.html">Barisal</a></li>
+                  <li><a href="Chittagong.html">Chittagong</a></li>
+                  <li><a href="dhaka.html">Dhaka</a></li>
+                  <li><a href="khulna.html">Khulna</a></li>
+                  <li><a href="mymensingh.html">Mymensingh</a></li>
+                  <li><a href="rangpur.html">Rangpur</a></li>
+                  <li><a href="rajshahi.html">Rajshahi</a></li>
+                  <li><a href="sylhet.html">Sylhet</a></li>
                 </ul>
               </li>
-              <li><a href="/Folklore.html">Folklores</a></li>
-              <li><a href="/Legends.html">Legends</a></li>
-              <li><a href="/Timeline/The timeline _ Anne Frank House.html">Timeline</a></li>
+              <li><a href="folklores.html">Folklores</a></li>
+              <li><a href="legends.html">Legends</a></li>
+              <li><a href="timeline.html">Timeline</a></li>
             </ul>
           </li>
+
+          <!--li class="mysearch">
+        <div class="sicon">
+          <i class="search fa fa-search"></i>
+        </div>
+        <div class="input">
+          <input type="text" placeholder="Search" id="search">
+          <i class="clear fa fa-times"></i>
+        </div>
+      </li>
+
+      <script>
+        let search = document.querySelector(".search");
+        let clear = document.querySelector(".clear");
+        search.onclick = function () {
+          document.querySelector(".mysearch").classList.toggle('active');
+        }
+        clear.onclick = function () {
+          document.getElementById("search").value = "";
+        }
+      </script-->
+
           <li><a class="nav-link" href="Login/signup.html"><i class="bi bi-person-fill"></i></a></li>
           <li class="dropdown"><a href="#"><span><i class="bi bi-globe"></i></span> <i
                 class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="/index.html">English</a></li>
-              <li><a href="/Home - Bng.html">বাংলা</a></li>
+              <li><a href="index.html">English</a></li>
+              <li><a href="Home - Bng.html">বাংলা</a></li>
             </ul>
           </li>
         </ul>
@@ -108,10 +130,10 @@
 
       <div class="mystory" data-aos="zoom-in">
         <div class="row">
-          <div class="col-md-6 col-lg-6 info-right" style="visibility: visible;">
+          <div class="col-md-6 col-lg-6 col-sm-12 info-right" style="visibility: visible;">
             <img src="assets/img/Barisal/Lakhutia Jomidar Bari+01.JPG" alt="Ruplal House">
           </div>
-          <div class="col-md-6 col-lg-6 info-left" style="visibility: visible;">
+          <div class="col-md-6 col-lg-6 col-sm-12 info-left" style="visibility: visible;">
             <h1>Lakutia Palace</h1>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis veritatis animi
@@ -167,7 +189,7 @@
       <div class="mystory" data-aos="zoom-in">
         <div class="row">
 
-          <div class="col-md-6 col-lg-6 info-left" style="visibility: visible;">
+          <div class="col-md-6 col-lg-6 col-sm-12 info-left" style="visibility: visible;">
             <h1>Ulania Jomidar Bari</h1>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis veritatis animi
@@ -216,7 +238,7 @@
 
           </div>
 
-          <div class="col-md-6 col-lg-6 info-right" style="visibility: visible;">
+          <div class="col-md-6 col-lg-6 col-sm-12 info-right" style="visibility: visible;">
             <img src="assets/img/Barisal/উলানিয়া_জমিদার_বাড়ি_জামে_মসজিদ.jpg" alt="Ruplal House">
           </div>
         </div>
@@ -224,28 +246,13 @@
 
     </div>
 
-    <div id="allcomments">
-      <div class="typing-demo">
-        Leave Us a Comment..
-      </div>
-      <form id="newcomment">
-        <label for="tbName">Your Name</label>
-        <br>
-        <input class="myname" id="tbName" type="text" maxlength="20" required>
-        <br>
-        <label for="txComment">Your Comment</label>
-        <br>
-        <textarea id="txComment" maxlength="600" required style="width: 60%;"></textarea>
-        <br>
-        <input class="cmntsubmit" type="submit" id="btnSubmitComment" value="SUBMIT">
-      </form>
-      <h3>Comments</h3>
-      <ul id="pastcomments"></ul>
-    </div>
-
-
-
   </main><!-- End #main -->
+
+  <div class="mycomment col-md-12 col-lg-12 col-sm-12">
+    <img src="assets/img/logo_3.png">
+    <iframe width="100%" height="600" src="comment.html" frameBorder="0"></iframe>
+  </div>
+
 
   <!-- ======= Footer ======= -->
   <footer id="footer">

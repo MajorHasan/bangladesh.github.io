@@ -152,9 +152,10 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
   transition: 0.3s;
   border-radius: 15px;
+  width: 150px;
 }
 .navbar .dropdown ul li {
-  min-width: 200px;
+  min-width: 150px;
 }
 .navbar .dropdown ul a {
   padding: 10px 20px;
@@ -365,6 +366,15 @@ h1, h2, h3, h4, h5, h6 {
   }
   #hero h2 {
     font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  #hero .carousel-container {
+    height: 30vh;
+  }
+  #hero h2 {
+    font-size: 18px;
   }
 }
 
@@ -1691,3 +1701,45 @@ section {
       border-color: transparent
     }
   }
+
+  .mycomment{
+    margin-top: 20px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba( 255, 255, 255, 0.1 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 1px );
+-webkit-backdrop-filter: blur( 1px );
+border-radius: 10px;
+  }
+
+  .mycomment img{
+    max-width: 35%;
+    position: absolute;
+    top: 80px;
+    right: 30px;
+  }
+
+.story img{
+  width: 100%;
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  max-height: 90vh;
+    }
+
+.story p{
+max-width: 50%;
+height: 8auto;
+top: 60px;
+padding: 10px;
+right: 20px;
+position: absolute;
+background: rgba( 255, 255, 255, 0.6 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 1px );
+-webkit-backdrop-filter: blur( 1px );
+border-radius: 10px;
+
+      }

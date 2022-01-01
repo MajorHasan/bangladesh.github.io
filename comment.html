@@ -8,8 +8,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/comment.js"></script>
+    <link rel="stylesheet" href="assets/css/comment.css">
+
 </head>
 
 <body>
@@ -46,8 +46,42 @@
             appId: "1:786616429988:web:6b323a16545d4eb3a82531",
             measurementId: "G-PG7XVX0FYK"
         };
+
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
+
+
+
+        const rootRef = firebase.database().ref();
+        const commentsRef = rootRef.child('comments');
+        document.getElementById("btnSubmitComment").addEventListener("click", function () {
+            var newcomment = document.getElementById('txComment').value.replace(/\n/g, "<br>");
+            var newPostRef = commentsRef.push();
+            newPostRef.set({
+                name: document.getElementById('tbName').value.trim(),
+                comment: newcomment.trim(),
+                frompage: location.pathname,
+                when: firebase.database.ServerValue.TIMESTAMP
+            });
+
+        });
+
+        function showpastcomments() {
+            var showat = document.getElementById('pastcomments');
+            //Get comments whose from page equals this page's pathname.
+            var commentsRef = firebase.database().ref('comments/').orderByChild('frompage').equalTo(location.pathname);
+            commentsRef.once('value', function (snapshot) {
+                snapshot.forEach(function (itemSnapshot) {
+                    //Get the object for one snapshot
+                    var itemData = itemSnapshot.val();
+                    var comment = itemData.comment;
+                    var name = itemData.name;
+                    var when = new Date(itemData.when).toLocaleDateString("en-us");
+                    showat.innerHTML += "<li>" + comment + "<span> -- " + name + " (" + when +
+                        ")</span></li>";
+                })
+            })
+        }
         //Called when page first opens and also after Submit button click to show all comments for this page.
         showpastcomments()
     </script>

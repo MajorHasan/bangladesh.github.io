@@ -254,3 +254,5 @@
 function changeIcon(x) {
   x.classList.toggle("bi-heart-fill");
 }
+
+element.frameBorder = 0

@@ -1,0 +1,101 @@
+ /* Just come optional fonts and characters for styling */
+ @import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans|Pacifico|Source+Code+Pro');
+ /* FontAwesome cdn fonts */
+ @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+ body {
+     font-family: 'Open Sans', sans-serif;
+ }
+ /* Sample styling for comments and commenting controls */
+ #allcomments {
+     width: 90%;
+     margin: 1em 0 4em 1em;
+     padding: 1%;
+     border-radius: 3px;
+ }
+
+ ul#pastcomments {
+     list-style-type: none;
+ }
+
+ ul#pastcomments li:before {
+     font-family: FontAwesome;
+     content: "\f086";
+     font-size: 24pt;
+     color: rgb(0, 0, 0);
+     margin-left: -42px;
+     padding-right: 10px;
+     position: relative;
+     top: 8px;
+ }
+
+ ul#pastcomments li {
+     margin: 0 0 2em 0;
+     padding: 10px;
+ }
+
+ ul#pastcomments li span {
+     font-size: 80%;
+     color: gray;
+     font-style: italic;
+ }
+
+ form#newcomment textarea {
+     height: 75px;
+     border-radius: 5px;
+     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+ }
+
+ form#newcomment label {
+     display: inline-block;
+     margin: 1em 0 0 0;
+    
+ }
+
+ form#newcomment textarea,
+ form#newcomment input[type="text"] {
+     margin-top: 0;
+ }
+
+ .myname{
+     width: 60%;
+     height: 30px;
+     border-radius: 5px;
+     border-width: 1px;
+     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+ }
+
+ .cmntsubmit {
+    margin-top: 15px;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    border-width: 1px;
+    font-weight: bold;
+    background: white;
+    color: aliceblue;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    background-image: linear-gradient(to right, #8360c3, #2ebf91);
+ }
+
+ .typing-demo {
+    width: 22ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
