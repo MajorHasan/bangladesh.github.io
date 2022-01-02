@@ -152,10 +152,10 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
   transition: 0.3s;
   border-radius: 15px;
-  width: 150px;
+  width: 120px;
 }
 .navbar .dropdown ul li {
-  min-width: 150px;
+  min-width: 120px;
 }
 .navbar .dropdown ul a {
   padding: 10px 20px;
@@ -717,11 +717,11 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-.team #team-flters {
+.team #team-filters {
   list-style: none;
   margin-bottom: 20px;
 }
-.team #team-flters li {
+.team #team-filters li {
   cursor: pointer;
   display: inline-block;
   margin: 0 0 10px 10px;
@@ -732,7 +732,7 @@ section {
   color: #444444;
   transition: all 0.3s ease-in-out;
 }
-.team #team-flters li::before {
+.team #team-filters li::before {
   content: "[";
   margin-right: 6px;
   color: #fff;
@@ -748,10 +748,10 @@ section {
   font-weight: 400;
   transition: all 0.3s ease-in-out;
 }
-.team #team-flters li:hover, .team #team-flters li.filter-active {
+.team #team-filters li:hover, .team #team-filters li.filter-active {
   color: #ef6603;
 }
-.team #team-flters li.filter-active::before, .team #team-filters li.filter-active::after {
+.team #team-filters li.filter-active::before, .team #team-filters li.filter-active::after {
   color: #ef6603;
 }
 .team .team-item {
@@ -1403,7 +1403,7 @@ section {
   padding: 5px;
   display: flex;
   margin-top: 40px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);  
+  box-shadow: 0 8px 20px 0 rgba( 31, 38, 135, 0.37 ); 
   background: linear-gradient(to right bottom,
   rgba(255, 255, 255, 0.8)
   rgba(3, 3, 3, 0.1)
@@ -1703,8 +1703,9 @@ section {
   }
 
   .mycomment{
-    margin-top: 20px;
+    margin-top: 30px;
     max-width: 90%;
+    margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
     background: rgba( 255, 255, 255, 0.1 );
@@ -1714,14 +1715,14 @@ backdrop-filter: blur( 1px );
 border-radius: 10px;
   }
 
-  .mycomment img{
-    max-width: 35%;
+  .mycomment i{
+    font-size: 100px;
     position: absolute;
-    top: 80px;
-    right: 30px;
+    top: 20%;
+    right: 10%;
   }
 
-.story img{
+  .story img{
   width: 100%;
   position: relative;
   margin-top: 40px;
@@ -1741,5 +1742,7 @@ box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 backdrop-filter: blur( 1px );
 -webkit-backdrop-filter: blur( 1px );
 border-radius: 10px;
+ }
 
-      }
+
+

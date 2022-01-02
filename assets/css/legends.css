@@ -510,6 +510,70 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 	}
 }
 
+@media screen and (max-width: 480px) {
+	.grid {
+		padding: 0 0.5vw;
+	}
+	.grid__item {
+		padding: 0 1vw;
+	}
+	.product__bg {
+		height: 6em;
+	}
+	.product__img {
+		max-height: 12em;
+	}
+	.product__title {
+		font-size: 1em;
+	}
+	.product__subtitle {
+		font-size: 0.5em;
+	}
+	.details {
+		padding: 20vh 0 2vh 5vw;
+	}
+	.details__bg--down {
+		top: 20vh;
+		height: 50vh;
+	}
+	.details__title {
+		font-size: 1em;
+	}
+	.details__subtitle {
+		font-size: .5em;
+	}
+	.details__price {
+		font-size: .75em;
+	}
+	.details__description {
+		max-width: 20%;
+		font-size: 0.4em;
+		margin: 1em 0 0 0;
+	}
+	.details__deco {
+		height: 7px;
+		width: 4em;
+	}
+	.details__img {
+		right: -12vh;
+	}
+	.details__magnifier {
+		right: 7vh;
+	}
+	.codrops-header {
+		padding: 1em 4em;
+	}
+	.codrops-header__title {
+		font-weight: bold;
+		padding-bottom: 0.25em;
+		text-align: center;
+		font-size: 1.25em;
+	}
+	.dummy-menu {
+		margin: 1.75em 1.5em 0 0;
+	}
+}
+
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 body {
