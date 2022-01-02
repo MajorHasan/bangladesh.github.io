@@ -291,9 +291,18 @@
   position: relative;
 }
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
+@media screen and (max-width: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+  .timeline-item {
+    align-self: baseline !important;
+    width: 90%;
+    padding: 0 30px 100px 80px;
+  }
+  .timeline__content-desc{
+    font-size: 15px;
+    }
+
 }
 
 .openbtn {

@@ -518,36 +518,36 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 		padding: 0 1vw;
 	}
 	.product__bg {
-		height: 6em;
+		height: 10em;
 	}
 	.product__img {
 		max-height: 12em;
 	}
 	.product__title {
-		font-size: 1em;
+		font-size: 1.5em;
 	}
 	.product__subtitle {
-		font-size: 0.5em;
+		font-size: 0.8em;
 	}
 	.details {
 		padding: 20vh 0 2vh 5vw;
 	}
 	.details__bg--down {
-		top: 20vh;
+		top: 40vh;
 		height: 50vh;
 	}
 	.details__title {
-		font-size: 1em;
+		font-size: 2em;
 	}
 	.details__subtitle {
-		font-size: .5em;
+		font-size: 1em;
 	}
 	.details__price {
-		font-size: .75em;
+		font-size: 1em;
 	}
 	.details__description {
-		max-width: 20%;
-		font-size: 0.4em;
+		max-width: 40%;
+		font-size: 1em;
 		margin: 1em 0 0 0;
 	}
 	.details__deco {
@@ -556,6 +556,8 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 	}
 	.details__img {
 		right: -12vh;
+		width: 20%;
+		height: auto;
 	}
 	.details__magnifier {
 		right: 7vh;
